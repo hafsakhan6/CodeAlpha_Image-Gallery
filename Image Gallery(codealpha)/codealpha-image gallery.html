@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="gallery-title">My Image Gallery</h1>
+
+  <!-- Filter Buttons (Bonus) -->
+  <div class="filter-buttons">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="people">People</button>
+    <button data-filter="architecture">Architecture</button>
+  </div>
+
+  <!-- Image Grid -->
+  <div class="gallery">
+    <div class="gallery-item" data-category="nature">
+      <img src="nature.jpg">
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="people.jpg">
+    </div>
+    <div class="gallery-item" data-category="logo">
+      <img src="logo c3.jpg" alt="logo c3">
+    </div>
+    <div class="gallery-item" data-category="architecture">
+        <img src="architecture.jpg" alt="logo c3">
+      </div>
+    <!-- Add more images -->
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <div class="lightbox-controls">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
